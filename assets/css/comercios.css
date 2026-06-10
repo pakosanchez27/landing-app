@@ -1,0 +1,60 @@
+@keyframes floatSoft {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@keyframes fadeLift {
+    from {
+        opacity: 0;
+        transform: translateY(22px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideShine {
+    0% {
+        transform: translateX(-140%);
+    }
+
+    100% {
+        transform: translateX(140%);
+    }
+}
+
+.fx-float {
+    animation: floatSoft 6s ease-in-out infinite;
+}
+
+.fx-appear {
+    animation: fadeLift .75s ease-out both;
+}
+
+.glass-card {
+    backdrop-filter: blur(16px);
+}
+
+.shine-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.shine-wrap::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(110deg, transparent 20%, rgba(255, 255, 255, .24) 48%, transparent 74%);
+    transform: translateX(-140%);
+    animation: slideShine 5.5s linear infinite;
+    pointer-events: none;
+}
