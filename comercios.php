@@ -18,8 +18,8 @@
 $frontendUrl = rtrim((string)($_ENV['FRONTEND_URL'] ?? getenv('FRONTEND_URL') ?: 'https://exploraneza.app'), '/');
 $frontendCommerceRegisterUrl = $frontendUrl . '/auth/comercios/registro';
 $frontendCommerceLoginUrl = $frontendUrl . '/auth/comercios/login';
-$usersLandingUrl = '/usuarios';
-$commerceLandingUrl = '/comercios';
+$usersLandingUrl = 'usuarios.php';
+$commerceLandingUrl = 'comercios.php';
 $logoLanding = 'assets/img/Logo.png';
 $heroPhone = 'assets/img/landing/tel-hero.png';
 $heroVector = 'assets/img/landing/Vector.png';
