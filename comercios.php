@@ -10,7 +10,7 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <link rel="stylesheet" href="../assets/css/comercios.css">
+    <link rel="stylesheet" href="assets/css/comercios.css">
 </head>
 
 <body class="bg-[#fbf5eb] text-[#201815] antialiased">
@@ -18,12 +18,12 @@
 $frontendUrl = rtrim((string)($_ENV['FRONTEND_URL'] ?? getenv('FRONTEND_URL') ?: 'https://exploraneza.app'), '/');
 $frontendCommerceRegisterUrl = $frontendUrl . '/auth/comercios/registro';
 $frontendCommerceLoginUrl = $frontendUrl . '/auth/comercios/login';
-$usersLandingUrl = '../usuarios/';
-$commerceLandingUrl = '../comercios/';
-$logoLanding = '../assets/img/Logo.png';
-$heroPhone = '../assets/img/landing/tel-hero.png';
-$heroVector = '../assets/img/landing/Vector.png';
-$mapPreview = '../assets/img/landing/mapas.png';
+$usersLandingUrl = '/usuarios';
+$commerceLandingUrl = '/comercios';
+$logoLanding = 'assets/img/Logo.png';
+$heroPhone = 'assets/img/landing/tel-hero.png';
+$heroVector = 'assets/img/landing/Vector.png';
+$mapPreview = 'assets/img/landing/mapas.png';
 ?>
 
     <div class="relative overflow-hidden bg-[#fbf5eb]" x-data="{ mobileMenu: false }">

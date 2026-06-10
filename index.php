@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="../assets/css/usuarios.css">
+    <link rel="stylesheet" href="assets/css/usuarios.css">
 </head>
 
 <body class="bg-[#fbf5eb] text-[#201815] antialiased">
@@ -23,27 +23,27 @@ $frontendCouponsUrl = $frontendUrl . '/cuponera';
 $frontendEventsUrl = $frontendUrl . '/eventos';
 $commerceLandingUrl = '/comercios';
 $usersLandingUrl = '/usuarios';
-$logoLanding = '../assets/img/Logo.png';
-$heroPhone = '../assets/img/landing/tel-hero.png';
-$heroPhone2 = '../assets/img/landing/landing-hero.png';
-$pasaporte = '../assets/img/landing/pasaporte.png';
-$heroVector = '../assets/img/landing/Vector.png';
-$mapPreview = '../assets/img/landing/mapas.png';
-$installStep2 = '../assets/img/landing/paso 2.jpeg';
-$installStep3 = '../assets/img/landing/paso 3.jpeg';
-$installStep4 = '../assets/img/landing/paso 4.jpeg';
-$installQr = '../assets/img/landing/qr-instalacion.png';
-$installAndroidStep1 = '../assets/img/landing/paso 1 - andriod.jpg';
-$installAndroidStep2 = '../assets/img/landing/paso 2 - andriod.jpg';
-$installAndroidStep3 = '../assets/img/landing/paso 3 - andriod.jpg';
-$installAndroidStep4 = '../assets/img/landing/paso 4 - andriod.jpg';
-$installAndroidStep5 = '../assets/img/landing/paso 5 - andriod.jpg';
-$installIosStep1 = '../assets/img/landing/paso 1 - ios.jpg';
-$installIosStep2 = '../assets/img/landing/paso 2 - ios.jpg';
-$installIosStep3 = '../assets/img/landing/paso 3 - ios.jpg';
-$installIosStep4 = '../assets/img/landing/paso 4 - ios.jpg';
-$installIosStep5 = '../assets/img/landing/paso 5 - ios.jpg';
-$installIosStep6 = '../assets/img/landing/paso 6 - ios.jpg';
+$logoLanding = 'assets/img/Logo.png';
+$heroPhone = 'assets/img/landing/tel-hero.png';
+$heroPhone2 = 'assets/img/landing/landing-hero.png';
+$pasaporte = 'assets/img/landing/pasaporte.png';
+$heroVector = 'assets/img/landing/Vector.png';
+$mapPreview = 'assets/img/landing/mapas.png';
+$installStep2 = 'assets/img/landing/paso 2.jpeg';
+$installStep3 = 'assets/img/landing/paso 3.jpeg';
+$installStep4 = 'assets/img/landing/paso 4.jpeg';
+$installQr = 'assets/img/landing/qr-instalacion.png';
+$installAndroidStep1 = 'assets/img/landing/paso 1 - andriod.jpg';
+$installAndroidStep2 = 'assets/img/landing/paso 2 - andriod.jpg';
+$installAndroidStep3 = 'assets/img/landing/paso 3 - andriod.jpg';
+$installAndroidStep4 = 'assets/img/landing/paso 4 - andriod.jpg';
+$installAndroidStep5 = 'assets/img/landing/paso 5 - andriod.jpg';
+$installIosStep1 = 'assets/img/landing/paso 1 - ios.jpg';
+$installIosStep2 = 'assets/img/landing/paso 2 - ios.jpg';
+$installIosStep3 = 'assets/img/landing/paso 3 - ios.jpg';
+$installIosStep4 = 'assets/img/landing/paso 4 - ios.jpg';
+$installIosStep5 = 'assets/img/landing/paso 5 - ios.jpg';
+$installIosStep6 = 'assets/img/landing/paso 6 - ios.jpg';
 $mapApiUrl = rtrim((string)($_ENV['MAP_API_URL'] ?? getenv('MAP_API_URL') ?: ''), '/');
 $mapApiUrl = $mapApiUrl !== '' ? $mapApiUrl : $frontendUrl . '/api/puntos-mapa';
 ?>
